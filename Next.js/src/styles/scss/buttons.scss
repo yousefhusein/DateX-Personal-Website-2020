@@ -1,0 +1,23 @@
+// ~ Buttons
+.btn {
+  padding: 0.5rem 1.75rem;
+  font-size: 0.9rem;
+  transition: transform 300ms ease-in-out;
+
+  &.btn-primary {
+    color: whitesmoke !important;
+  }
+
+  &.btn-sm {
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:focus {
+    transform: scale(1) !important;
+  }
+}

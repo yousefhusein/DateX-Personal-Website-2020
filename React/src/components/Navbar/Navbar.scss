@@ -1,0 +1,113 @@
+$nav-width: 250px;
+
+.navbar {
+  padding: 0.907rem 0;
+  z-index: 9;
+  border-bottom: 1px solid rgba(255 255 255 / 20%);
+  box-shadow: 0 1px 10px rgba(0 0 0 / 10%);
+  background-color: rgba(255 255 255 / 5%);
+  color: #fdfdfd;
+  transition: height 300ms ease-in-out, background-color 300ms ease-in-out,
+    padding 300ms ease-in-out;
+
+  .navbar-toggler {
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+
+  &.active {
+    padding: 0.594rem 0;
+    background-color: #fdfdfd;
+    color: #222;
+
+    .nav-link {
+
+      &.active,
+      &:hover {
+        color: #0043ff !important;
+      }
+
+      &::before {
+        background-color: #0043ff !important;
+        height: 2px !important;
+        bottom: -18px !important;
+      }
+    }
+  }
+
+  .navbar-brand {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: inherit;
+  }
+
+  .nav-item {
+    padding-right: 0.7rem;
+    padding-left: 0.7rem;
+
+    .nav-link {
+      font: inherit !important;
+      color: inherit;
+      position: relative;
+      padding: 0;
+      font-size: 1rem;
+      box-shadow: none !important;
+
+      &::before {
+        content: "";
+        transition: all 300ms ease-in-out;
+        position: absolute;
+        visibility: hidden;
+        transform: scale(0);
+        left: 0;
+        bottom: -23px;
+        background-color: #fdfdfd;
+        height: 1px;
+        width: 100%;
+      }
+
+      &.active::before,
+      &:hover::before {
+        visibility: visible;
+        transform: scaleX(1);
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    .navbar-collapse .navbar-nav {
+      background-color: #f3f3f3;
+      color: #222222;
+      margin-top: 1rem;
+      position: relative;
+      padding: 10px;
+
+      .nav-item {
+        .nav-link {
+          padding: 10px;
+          font-size: 15px !important;
+          border-bottom: 1px solid #ddd;
+
+          &:hover,
+          &.active {
+            color: #0043ff;
+          }
+
+          &::before {
+            display: none !important;
+          }
+        }
+
+        &:last-child .nav-link {
+          border-bottom: 0;
+        }
+      }
+    }
+
+    &.active .nav-item .nav-link {
+      padding: 8px;
+    }
+  }
+}

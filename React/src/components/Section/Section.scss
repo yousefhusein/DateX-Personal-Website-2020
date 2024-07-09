@@ -1,0 +1,22 @@
+.section {
+  padding: 10px 0;
+
+  &.dark {
+    background-color: #080631;
+    color: whitesmoke;
+  }
+
+  &.light {
+    background-color: #f3f4f5;
+    color: #222;
+  }
+
+  &.white {
+    background-color: #fdfdfd;
+    color: #222;
+  }
+
+  &>.section-header {
+    padding: 40px 0;
+  }
+}

@@ -1,0 +1,17 @@
+.back-to-top-btn {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  outline: none;
+  border: 0;
+  width: 45px;
+  height: 45px;
+  background-color: #0046fd;
+  color: #fdfdfd;
+  border-radius: 15px;
+  display: none;
+
+  &.show {
+    display: block;
+  }
+}

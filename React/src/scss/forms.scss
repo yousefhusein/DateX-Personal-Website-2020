@@ -1,0 +1,33 @@
+.form-control,
+.form-select {
+  box-shadow: none !important;
+}
+
+.form-control,
+.form-select {
+  background: rgba($color: #000000, $alpha: 0.1);
+  border-radius: 0;
+  border: 0;
+  padding: 1rem;
+  color: #fdfdfd;
+  border-bottom: 1px solid #ccc;
+
+  &::placeholder {
+    color: #cccccc;
+  }
+
+  &:focus {
+    border-bottom-color: #0045df;
+    color: #fdfdfd;
+    background: rgba($color: #000000, $alpha: 0.2);
+  }
+}
+
+.form-select,
+select.form-control {
+  cursor: pointer;
+}
+
+textarea.form-control {
+  resize: none;
+}

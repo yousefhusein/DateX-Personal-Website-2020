@@ -1,0 +1,25 @@
+.footer {
+  padding: 60px 0px 20px 0px;
+  background-image: url("../../assets/hero-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  .social-links {
+    li {
+      a {
+        display: inline-block;
+        height: 36px;
+        width: 36px;
+        text-align: center;
+        line-height: 36px;
+        color: #222;
+        text-decoration: none;
+        font-size: 18px;
+        background-color: #fdfdfd;
+        border: 1px solid #ccc;
+        border-radius: 50%;
+      }
+    }
+  }
+}
